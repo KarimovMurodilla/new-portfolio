@@ -1,48 +1,36 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import me from "./public/me_v4.jpg";
+
+
+import { FaLinkedin, FaTelegram, FaGithub, FaInstagram } from "react-icons/fa6";
 
 export default function Home() {
 	return (
-		<main>
-			<div className="text-center mt-4 col-md-6 mx-auto">
-				<h1 className="text-danger">Hello bootstrap</h1>
-				<div className="accordion" id="accordionExample">
-					<div className="accordion-item">
-						<h2 className="accordion-header">
-							<button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								Accordion Item #1
-							</button>
-						</h2>
-						<div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-							<div className="accordion-body">
-								<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-							</div>
-						</div>
-					</div>
-					<div className="accordion-item">
-						<h2 className="accordion-header">
-							<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Accordion Item #2
-							</button>
-						</h2>
-						<div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<div className="accordion-body">
-								<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-							</div>
-						</div>
-					</div>
-					<div className="accordion-item">
-						<h2 className="accordion-header">
-							<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Accordion Item #3
-							</button>
-						</h2>
-						<div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<div className="accordion-body">
-								<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-							</div>
-						</div>
-					</div>
+		<main style={{ marginBottom: 200 + "px"}}>
+			<div className="text-center mt-5 col-md-6 mx-auto">
+				<div>
+					{/* <img src="/public/me.JPG" style={{ borderRadius: 50 + '%' }} alt="Me" /> */}
+					<Image
+						src={me}
+						alt="Me"
+						width={100}
+						height={100}
+						style={{ borderRadius: 50 + '%' }}
+					/>
+				</div>
+				<div className="mt-3 fs-1">
+					<h1>Murodilla Karimov</h1>
+					<p className="text-secondary fs-4">
+						Fullstack developer
+					</p>
+				</div>
+				<hr />
+				<div className="justify-content-lg-center">
+					<a href="https://www.linkedin.com/in/MurodillaKarimov" target="_blank"><FaLinkedin className="fs-2 me-3"/></a>
+					<a href="https://t.me/MurodillaKarimov" target="_blank"><FaTelegram className="fs-2 me-3"/></a>
+					<a href="https://github.com/KarimovMurodilla" target="_blank"><FaGithub className="fs-2 me-3"/></a>
+					<a href="https://instagram.com/murodilla_karimov" target="_blank"><FaInstagram className="fs-2 me-3"/></a>
 				</div>
 			</div>
 		</main>
