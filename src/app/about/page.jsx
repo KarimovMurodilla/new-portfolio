@@ -130,7 +130,7 @@ export default function About() {
                                 orders. Active participation in the development and implementation of pet projects,
                                 demonstrating a creative approach and skills of independent initiative.
                             </p>
-                            <footer className="blockquote-footer">January 2020-Now</footer>
+                            <footer className="blockquote-footer">January 2021-Now</footer>
                         </blockquote>
                     </div>
                     <hr />
@@ -167,7 +167,7 @@ export default function About() {
                 </div>
                 <div>
                     <div className="text-decoration-underline fs-5">
-                        Uzinfocom - Backend developer
+                        Uzinfocom - Backend developer (Internship)
                     </div>
                     <div>
                         <blockquote className="blockquote mb-0">
@@ -187,7 +187,7 @@ export default function About() {
                 </div>
                 <div>
                     <div className="text-decoration-underline fs-5">
-                        IT park - Backend developer
+                        IT park - Backend developer (Internship)
                     </div>
                     <div>
                         <blockquote className="blockquote mb-0">
